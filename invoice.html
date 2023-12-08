@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/invoice.css">
+    <title>Invoice</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="heading">Invoice No.: </h2>
+                    <p class="sub-heading">Order Date:</p>
+                </div>
+                <div class="col-6">
+                    <p class="sub-heading">Full Name:  </p>
+                    <p class="sub-heading">Address:  </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="body-section">
+            <h3 class="heading">Ordered Items</h3>
+            <br>
+            <table class="table-bordered" id="tbl">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th class="w-20">Price</th>
+                        <th class="w-20">Quantity</th>
+                        <th class="w-20">Grandtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Sub Total</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Tax Total 5%</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Grand Total</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table><br>
+            <button class="btn btn-info offset-9 col-2">Buy</button>
+        </div>      
+    </div> 
+    <script src="js/invoice.js"></script>    
+</body>
+</html>
