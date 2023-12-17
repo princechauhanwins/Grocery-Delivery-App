@@ -1,3 +1,5 @@
+<!-- HTML for detail.html -->
+<!-- This page will display detailed information about a product -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Home</title>
+    <title>Product Detail</title>
 </head>
 <body>
-    <!-- navbar -->
-    <div class="bg-dark">
+       <!-- navbar -->
+       <div class="bg-dark">
         <nav class="navbar navbar-expand-lg">
             <div class="collapse navbar-collapse" id="navbar">
+                <h6>&nbsp;&nbsp;&nbsp;&nbsp;<a href="home.html" class="text-white">Home</a></h6>
               <div class="logout">
                 <h5 class="text-white">Welcome:
                   <script>
@@ -24,16 +27,14 @@
           </nav>
     </div>  
     <!-- end navbar -->
-      <div id="productTitle" class="grid-container"></div>
-<script>
-  function Logout(){
-    localStorage.removeItem("name");
-    window.location.href="login.html";
-  }
+    <div id="detailContent" class="myImages">
+    </div>
+    <script>
+        function Logout(){
+localStorage.removeItem("name");
+window.location.href="login.html";
+}
 </script>
-<script src="js/home.js">
-</script>
+    <script src="js/detail.js"></script>
 </body>
 </html>
-
- 

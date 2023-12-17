@@ -48,13 +48,8 @@
 .card button{
     padding: 5px 10px;
     border: none;
-    background-color:#f3f5f7;
     cursor: pointer;
 }
-.card button:hover{
-    background-color: #c3c3d4;
-}
-
 
 .myImages{
     height: 250px;

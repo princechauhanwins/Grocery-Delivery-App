@@ -35,41 +35,13 @@
   let card=document.createElement('article')
   card.classList.add('card');
   card.innerHTML=`
-  <h2>Product Detail:-</h2>
   <img src="${product.image}">
   <h3>${product.title}</h3>
   <h4>$${product.price}</h4>
   <p>${product.description}</p>
-  <button onclick="addToCart(${product.id})" clas="btn btn-secondry">Add To Cart</button><br>
-  <a href="invoice.html"><button clas="btn btn-secondry">Buy</a></button>
   `;
- productDetail.appendChild(card);
+ window.location.href = `productDetail.html?id=${productId}`;
 })
  .catch(error=>console.error('error fathing the Detail:',error));
  }
 
-
- // Show detail of product added to the cart on the bottom of the home page
-
- let tbl=document.getElementById("tbl");
- function addToCart(productId)
- {
-  fetch (`https://fakestoreapi.com/products/${productId}`)
-  .then(Response=>Response.json())
-  .then(product=>{
-    let card=document.createElement('article')
-    card.classList.add('card');
-    card.innerHTML=`
-  <h2>Cart</h2>
-    <img src="${product.image}">
-    <h3>${product.title}</h3>
-    <h4>$${product.price}</h4>
-    <p>${product.description}</p>
-    <a href="invoice.html"><button clas="btn btn-secondry">Buy</a></button>
-    `;
-   tbl.appendChild(card);
-  })
-  .catch(error=>console.error('error fathing the Detail:',error));
- } 
-
- 
